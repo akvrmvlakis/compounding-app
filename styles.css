@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+
+body {
+  background-color: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+input.form-control {
+  height: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h1.display-6.fw-bold.text-center {
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  color: rgb(0, 255, 51);
+}
+
+button.btn.btn-lg.btn-primary.w-100.calculate {
+  background-color: rgb(0, 255, 51);
+  border-color: rgb(0, 255, 51);
+  color: #000;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+}
+
+button.btn.btn-lg.btn-danger.w-100.mt-4.reset {
+  background-color: rgb(255, 0, 191);
+  border-color: rgb(255, 0, 191);
+  color: #000;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+}
+
+label.mt-2 {
+  color: rgb(0, 255, 51);
+}
+
+input#value1, input#value2, input#value3 {
+  background-color: rgb(53, 47, 47);
+  border-color: rgb(53, 47, 47);
+  color: rgb(0, 255, 51);
+}
+
+h5.text-center.fixed-bottom {
+  color: rgb(0, 255, 51);
+}
+
+div#d {
+  color: rgb(0, 255, 51);
+  font-size: 3rem;
+  font-family: 'VT323', monospace;
+}
