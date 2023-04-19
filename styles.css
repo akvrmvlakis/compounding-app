@@ -26,7 +26,7 @@ button.btn.btn-lg.btn-primary.w-100.calculate {
   color: orange;
   border-width: 4px;
   font-family: "VT323", monospace;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-top: -1rem;
 }
 
@@ -36,7 +36,7 @@ button.btn.btn-lg.btn-danger.w-100.mt-4.reset {
   border-width: 4px;
   color: blue;
   font-family: "VT323", monospace;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 label {
