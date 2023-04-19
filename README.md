@@ -4,7 +4,7 @@
 
 Site: https://akvrmvlakis-compounding.netlify.app/
 
-This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending its immense power on their journey to a more prosperous life. Dedicated to Jupiter and its spirits.
+This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending the immense power of compounding on their journey to a more prosperous life. Dedicated to Jupiter and its spirits.
 
 ## Instructions
 

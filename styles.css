@@ -24,7 +24,7 @@ button.btn.btn-lg.btn-primary.w-100.calculate {
   background-color: rgb(0, 0, 255, 0.5);
   border-color: orange;
   color: orange;
-  border-width: 5px;
+  border-width: 4px;
   font-family: "VT323", monospace;
   font-size: 2rem;
   margin-top: -1rem;
@@ -33,7 +33,7 @@ button.btn.btn-lg.btn-primary.w-100.calculate {
 button.btn.btn-lg.btn-danger.w-100.mt-4.reset {
   background-color: rgb(255, 165, 0, 0.5);
   border-color: blue;
-  border-width: 5px;
+  border-width: 4px;
   color: blue;
   font-family: "VT323", monospace;
   font-size: 2rem;
