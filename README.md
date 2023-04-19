@@ -2,9 +2,9 @@
  <h1>Compounding Calculator</h1>
  </div>
 
-Site: https://akvrmvlakis-compounding.netlify.app/
+Site: https://compoundingcalculator.netlify.app/
 
-This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending the immense power of compounding on their journey to a more prosperous life. Dedicated to Jupiter and its spirits.
+This small app was made for personal use and inspiration to calculate compounded Forex profit in order to stay disciplined with my trading. This will hopefully aid traders in comprehending the immense power of compounding on their journey to a more prosperous life. Dedicated to Jupiter and its spirits.
 
 ## Instructions
 
