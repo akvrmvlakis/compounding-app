@@ -27,6 +27,7 @@ button.btn.btn-lg.btn-primary.w-100.calculate {
   border-width: 5px;
   font-family: "VT323", monospace;
   font-size: 2rem;
+  margin-top: -1rem;
 }
 
 button.btn.btn-lg.btn-danger.w-100.mt-4.reset {
@@ -38,7 +39,7 @@ button.btn.btn-lg.btn-danger.w-100.mt-4.reset {
   font-size: 2rem;
 }
 
-label.mt-2 {
+label {
   color: orange;
   background-color: rgb(0, 0, 0, 0.5);
   padding: 5px;
