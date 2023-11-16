@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>COMPOUNDING CALCULATOR</title>
+    <meta
+      name="description"
+      content="This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending its immense power on their journey to a more prosperous life. Dedicated to Jupiter and its spirits."
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>COMPOUNDING CALCULATOR</title>
-  <meta name="description"
-    content="This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending its immense power on their journey to a more prosperous life. Dedicated to Jupiter and its spirits.">
-</head>
-
-<body>
-  <section class="main-compounding">
-    <form id="myForm">
-      <div class="container-lg">
-        <div class="row d-flex">
-          <div class="col-sm-10 col-md-8 mx-auto">
-            <h1 class="display-6 fw-bold text-center mb-5">COMPOUNDING CALCULATOR</h1>
-            <p class="text-center mt-5">Wealth and riches shall be in his house and his righteousness endureth for
-              ever...
-            </p>
-            <label>Balance</label>
-            <input type="number" class="form-control balance" id="value1" />
+  <body>
+    <section class="main-compounding">
+      <form id="myForm">
+        <div class="container-lg">
+          <div class="row d-flex">
+            <div class="col-sm-10 col-md-8 mx-auto">
+              <h1 class="display-6 fw-bold text-center mb-5">
+                COMPOUNDING CALCULATOR
+              </h1>
+              <p class="text-center mt-5">
+                Wealth and riches shall be in his house and his righteousness
+                endureth for ever...
+              </p>
+              <label>Balance</label>
+              <input type="number" class="form-control balance" id="value1" />
+            </div>
           </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-sm-10 col-md-8 mx-auto">
-            <label class="mt-2">Rate (e.g 1.01 = 1% and 1.99 = 99%)</label>
-            <input type="number" class="form-control rate" min="1" step=".01" id="value2" />
-          </div>
-          <div class="col-sm-10 col-md-8 mx-auto">
-            <label class="mt-2">Time Interval (e.g months, years)</label>
-            <input type="number" class="form-control time-interval" id="value3" />
-            <div class="result text-center my-2" id="d">
-              <h3></h3>
+          <div class="row mb-3">
+            <div class="col-sm-10 col-md-8 mx-auto">
+              <label class="mt-2">Rate % (0% - &#8734;%) </label>
+              <input
+                type="number"
+                class="form-control rate"
+                min="1"
+                step=".01"
+                id="value2"
+              />
+            </div>
+            <div class="col-sm-10 col-md-8 mx-auto">
+              <label class="mt-2">Time Interval (e.g months, years)</label>
+              <input
+                type="number"
+                class="form-control time-interval"
+                id="value3"
+              />
+              <div class="result text-center my-2" id="d">
+                <h3></h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
 
-    <div class="container-lg">
-      <div class="row d-flex">
-        <div class="col-sm-10 col-md-8 mx-auto">
-          <button type="submit" class="btn btn-lg btn-primary w-100 calculate">
-            Calculate
-          </button>
-          <button type="submit" class="btn btn-lg btn-danger w-100 mt-4 reset">
-            Reset
-          </button>
+      <div class="container-lg">
+        <div class="row d-flex">
+          <div class="col-sm-10 col-md-8 mx-auto">
+            <button
+              type="submit"
+              class="btn btn-lg btn-primary w-100 calculate"
+            >
+              Calculate
+            </button>
+            <button
+              type="submit"
+              class="btn btn-lg btn-danger w-100 mt-4 reset"
+            >
+              Reset
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <h5 class="text-center fixed-bottom">
-      <span id="copyright">&copy</span><span id="year"></span> <a
-        href="https://github.com/akvrmvlakis/compounding-app">akvrmvlakis</a>
-    </h5>
-  </section>
-  <script src="scripts.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-</body>
-
+      <h5 class="text-center fixed-bottom">
+        <span id="copyright">&copy</span><span id="year"></span>
+        <a href="https://github.com/akvrmvlakis/compounding-app">akvrmvlakis</a>
+      </h5>
+    </section>
+    <script src="scripts.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
