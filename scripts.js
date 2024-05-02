@@ -25,3 +25,7 @@ document
   .querySelector(".calculate")
   .addEventListener("click", calculateCompound);
 document.querySelector(".reset").addEventListener("click", resetCalculator);
+
+// get copyright year
+new Date().getFullYear();
+document.getElementById("year").innerHTML = new Date().getFullYear();
