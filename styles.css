@@ -55,7 +55,6 @@ input#value3 {
 
 h5.text-center.fixed-bottom {
   color: orange;
-  font-size: 1rem;
 }
 
 div#d {
@@ -107,7 +106,7 @@ p.text-center {
 }
 
 #year {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #copyright {
