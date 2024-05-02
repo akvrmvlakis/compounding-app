@@ -1,97 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>COMPOUNDING CALCULATOR</title>
-    <meta
-      name="description"
-      content="This small app was made for personal use and inspiration to calculate compounded Forex profit and stay disciplined. This will hopefully aid traders in comprehending its immense power on their journey to a more prosperous life. Dedicated to Jupiter and its spirits."
-    />
+    <title>Compounding App</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
-    <section class="main-compounding">
-      <form id="myForm">
-        <div class="container-lg">
-          <div class="row d-flex">
-            <div class="col-sm-10 col-md-8 mx-auto">
-              <h1 class="display-6 fw-bold text-center mb-5">
+    <section class="compounding d-flex">
+      <div
+        class="container-fluid d-flex mx-auto my-auto justify-content-center"
+      >
+        <div class="row w-100">
+          <div class="col-md-12">
+            <div class="jupiter-intro fixed-top">
+              <h1 class="display-6 fw-bold text-center text-orange vt323">
                 COMPOUNDING CALCULATOR
               </h1>
-              <p class="text-center mt-5">
+              <p
+                class="text-center text-orange fs-md-1 fs-sm-4 mx-2 mt-5 satisfy"
+              >
                 Wealth and riches shall be in his house and his righteousness
                 endureth for ever...
               </p>
-              <label>Balance</label>
-              <input type="number" class="form-control balance" id="value1" />
             </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-sm-10 col-md-8 mx-auto">
-              <label class="mt-2">Rate % (0% - &#8734;%) </label>
-              <input
-                type="number"
-                class="form-control rate"
-                min="1"
-                step=".01"
-                id="value2"
-              />
-            </div>
-            <div class="col-sm-10 col-md-8 mx-auto">
-              <label class="mt-2">Time Interval (e.g months, years)</label>
-              <input
-                type="number"
-                class="form-control time-interval"
-                id="value3"
-              />
-              <div class="result text-center my-2" id="d">
-                <h3></h3>
+
+            <form id="jupiter-form">
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="text-orange bg-grey px-2 my-2">Balance</label>
+                  <input
+                    type="number"
+                    class="form-control balance py-4 rounded-0 bg-grey text-orange"
+                    id="value1"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="text-orange bg-grey px-2 my-2"
+                    >Rate % (0% - &#8734;%)
+                  </label>
+                  <input
+                    type="number"
+                    class="form-control rate py-4 rounded-0 bg-grey text-orange"
+                    min="1"
+                    step=".01"
+                    id="value2"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="text-orange bg-grey px-2 my-2"
+                    >Time Interval (e.g months, years)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control time-interval py-4 rounded-0 bg-grey text-orange"
+                    id="value3"
+                  />
+                </div>
+              </div>
+              <div class="result text-center mt-3 mb-2 bg-grey" id="d"></div>
+            </form>
+
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-between">
+                <button
+                  type="submit"
+                  class="btn btn-lg bg-transparent text-orange border-light w-50 py-3 me-2 mt-2 rounded-0 calculate"
+                >
+                  Calculate
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-lg bg-transparent text-orange border-light w-50 py-3 ms-2 mt-2 rounded-0 reset"
+                >
+                  Reset
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </form>
 
-      <div class="container-lg">
-        <div class="row d-flex">
-          <div class="col-sm-10 col-md-8 mx-auto">
-            <button
-              type="submit"
-              class="btn btn-lg btn-primary w-100 calculate"
-            >
-              Calculate
-            </button>
-            <button
-              type="submit"
-              class="btn btn-lg btn-danger w-100 mt-4 reset"
-            >
-              Reset
-            </button>
-          </div>
-        </div>
+        <h5 class="text-center fixed-bottom">
+          <span id="copyright">&copy</span><span id="year"></span>
+          <a href="https://github.com/akvrmvlakis/compounding-app"
+            >akvrmvlakis</a
+          >
+        </h5>
       </div>
-
-      <h5 class="text-center fixed-bottom">
-        <span id="copyright">&copy</span><span id="year"></span>
-        <a href="https://github.com/akvrmvlakis/compounding-app">akvrmvlakis</a>
-      </h5>
     </section>
     <script src="scripts.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
